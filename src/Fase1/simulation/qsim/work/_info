@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/git/miniprojLSD/src/Fase1/simulation/qsim
+vclockAdjuster
+!s110 1523544507
+!i10b 1
+!s100 A4DKLDL^?EePBh9Xg@Az@3
+I_8JNif3MUS_lAU:4NXU9@1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1523544506
+8miniprojLSD.vo
+FminiprojLSD.vo
+L0 32
+Z2 OV;L;10.4b;61
+r1
+!s85 0
+31
+!s108 1523544507.000000
+!s107 miniprojLSD.vo|
+!s90 -work|work|miniprojLSD.vo|
+!i113 1
+Z3 o-work work
+nclock@adjuster
+vclockAdjuster_vlg_vec_tst
+!s110 1523544508
+!i10b 1
+!s100 Ya]jmf<z8U`eenabL:D]a2
+I[M?4j:IRmRDWMDzf9l_c01
+R1
+R0
+w1523544501
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R2
+r1
+!s85 0
+31
+!s108 1523544508.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R3
+nclock@adjuster_vlg_vec_tst
