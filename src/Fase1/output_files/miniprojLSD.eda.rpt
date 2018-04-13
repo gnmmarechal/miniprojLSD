@@ -1,5 +1,5 @@
 EDA Netlist Writer report for miniprojLSD
-Thu Apr 12 15:48:26 2018
+Fri Apr 13 03:06:25 2018
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Apr 12 15:48:26 2018 ;
+; EDA Netlist Writer Status ; Successful - Fri Apr 13 03:06:25 2018 ;
 ; Revision Name             ; miniprojLSD                           ;
 ; Top-level Entity Name     ; clockAdjuster                         ;
 ; Family                    ; Cyclone IV E                          ;
@@ -95,14 +95,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: devices manufactured by Altera and sold by Altera or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Thu Apr 12 15:48:26 2018
+    Info: Processing started: Fri Apr 13 03:06:25 2018
 Info: Command: quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=D:/git/miniprojLSD/src/Fase1/simulation/qsim/ miniprojLSD -c miniprojLSD
 Info (119006): Selected device EP4CE115F29C7 for design "miniprojLSD"
 Info (204019): Generated file miniprojLSD.vo in folder "D:/git/miniprojLSD/src/Fase1/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 738 megabytes
-    Info: Processing ended: Thu Apr 12 15:48:26 2018
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Fri Apr 13 03:06:26 2018
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 
