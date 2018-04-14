@@ -4,11 +4,67 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "clkOut",
+					"name" : "hasEnded",
 					"strict" : false
 				},
 				{
-					"name" : "clkIn",
+					"name" : "counterOut[0]",
+					"strict" : false
+				},
+				{
+					"name" : "counterOut[1]",
+					"strict" : false
+				},
+				{
+					"name" : "counterOut[2]",
+					"strict" : false
+				},
+				{
+					"name" : "counterOut[3]",
+					"strict" : false
+				},
+				{
+					"name" : "counterOut[4]",
+					"strict" : false
+				},
+				{
+					"name" : "counterOut[5]",
+					"strict" : false
+				},
+				{
+					"name" : "counterOut[6]",
+					"strict" : false
+				},
+				{
+					"name" : "counterOut[7]",
+					"strict" : false
+				},
+				{
+					"name" : "counterOut[8]",
+					"strict" : false
+				},
+				{
+					"name" : "counterOut[9]",
+					"strict" : false
+				},
+				{
+					"name" : "counterOut[10]",
+					"strict" : false
+				},
+				{
+					"name" : "counterOut[11]",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "startPause",
 					"strict" : false
 				}
 			]

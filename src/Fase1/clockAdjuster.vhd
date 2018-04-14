@@ -5,8 +5,8 @@ use IEEE.NUMERIC_STD.all;
 entity clockAdjuster is
 	-- Testado com k = 2 (clkOut é de 25MHz)
 	generic(	K		:	positive := 50000000); -- Divide o clock por 50*10^6, para obter um clock de 1Hz
-	port	 ( clkIn	:	in	std_logic;
-				clkOut:	out std_logic);
+	port( clkIn	:	in	std_logic;
+			clkOut:	out std_logic);
 end clockAdjuster;
 
 architecture Behavioral of clockAdjuster is

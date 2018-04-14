@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Fri Apr 13 03:08:02 2018
+Analysis & Synthesis Status : Successful - Sat Apr 14 20:55:04 2018
 Quartus Prime Version : 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 Revision Name : miniprojLSD
-Top-level Entity Name : clockAdjuster
+Top-level Entity Name : Timer
 Family : Cyclone IV E
-Total logic elements : 57
-    Total combinational functions : 57
-    Dedicated logic registers : 32
-Total registers : 32
-Total pins : 2
+Total logic elements : 31
+    Total combinational functions : 31
+    Dedicated logic registers : 14
+Total registers : 14
+Total pins : 16
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

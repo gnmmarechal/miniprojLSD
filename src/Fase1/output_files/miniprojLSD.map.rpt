@@ -1,5 +1,5 @@
 Analysis & Synthesis report for miniprojLSD
-Fri Apr 13 03:08:02 2018
+Sat Apr 14 20:55:04 2018
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -14,10 +14,11 @@ Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |clockAdjuster
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  9. Inverted Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -44,16 +45,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 13 03:08:02 2018       ;
+; Analysis & Synthesis Status        ; Successful - Sat Apr 14 20:55:04 2018       ;
 ; Quartus Prime Version              ; 15.1.1 Build 189 12/02/2015 SJ Lite Edition ;
 ; Revision Name                      ; miniprojLSD                                 ;
-; Top-level Entity Name              ; clockAdjuster                               ;
+; Top-level Entity Name              ; Timer                                       ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 57                                          ;
-;     Total combinational functions  ; 57                                          ;
-;     Dedicated logic registers      ; 32                                          ;
-; Total registers                    ; 32                                          ;
-; Total pins                         ; 2                                           ;
+; Total logic elements               ; 31                                          ;
+;     Total combinational functions  ; 31                                          ;
+;     Dedicated logic registers      ; 14                                          ;
+; Total registers                    ; 14                                          ;
+; Total pins                         ; 16                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -67,7 +68,7 @@ agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; clockAdjuster      ; miniprojLSD        ;
+; Top-level entity name                                                      ; Timer              ; miniprojLSD        ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -159,13 +160,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                          ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                   ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------+---------+
-; clockAdjuster.vhd                ; yes             ; User VHDL File  ; D:/git/miniprojLSD/src/Fase1/clockAdjuster.vhd ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                  ;
++----------------------------------+-----------------+-----------------+----------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path           ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------+---------+
+; Timer.vhd                        ; yes             ; User VHDL File  ; D:/git/miniprojLSD/src/Fase1/Timer.vhd ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -173,30 +174,30 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 57          ;
+; Estimated Total logic elements              ; 31          ;
 ;                                             ;             ;
-; Total combinational functions               ; 57          ;
+; Total combinational functions               ; 31          ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 13          ;
-;     -- 3 input functions                    ; 1           ;
-;     -- <=2 input functions                  ; 43          ;
+;     -- 4 input functions                    ; 4           ;
+;     -- 3 input functions                    ; 2           ;
+;     -- <=2 input functions                  ; 25          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 27          ;
-;     -- arithmetic mode                      ; 30          ;
+;     -- normal mode                          ; 20          ;
+;     -- arithmetic mode                      ; 11          ;
 ;                                             ;             ;
-; Total registers                             ; 32          ;
-;     -- Dedicated logic registers            ; 32          ;
+; Total registers                             ; 14          ;
+;     -- Dedicated logic registers            ; 14          ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 2           ;
+; I/O pins                                    ; 16          ;
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
-; Maximum fan-out node                        ; clkIn~input ;
-; Maximum fan-out                             ; 32          ;
-; Total fan-out                               ; 207         ;
-; Average fan-out                             ; 2.23        ;
+; Maximum fan-out node                        ; reset~input ;
+; Maximum fan-out                             ; 15          ;
+; Total fan-out                               ; 141         ;
+; Average fan-out                             ; 1.83        ;
 +---------------------------------------------+-------------+
 
 
@@ -205,7 +206,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |clockAdjuster             ; 57 (57)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 2    ; 0            ; |clockAdjuster      ; work         ;
+; |Timer                     ; 31 (31)           ; 14 (14)      ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |Timer              ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -215,24 +216,37 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 32    ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 14    ;
+; Number of registers using Synchronous Clear  ; 1     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 12    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |clockAdjuster ;
-+----------------+----------+---------------------------------------------------+
-; Parameter Name ; Value    ; Type                                              ;
-+----------------+----------+---------------------------------------------------+
-; K              ; 50000000 ; Signed Integer                                    ;
-+----------------+----------+---------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; s_count[4]                             ; 3       ;
+; s_count[9]                             ; 3       ;
+; s_count[10]                            ; 3       ;
+; s_count[11]                            ; 3       ;
+; Total number of inverted registers = 4 ;         ;
++----------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Timer|s_count[0]          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Timer|s_count[4]          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
 +-----------------------------------------------------+
@@ -240,20 +254,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 2                           ;
-; cycloneiii_ff         ; 32                          ;
-;     plain             ; 32                          ;
-; cycloneiii_lcell_comb ; 57                          ;
-;     arith             ; 30                          ;
-;         2 data inputs ; 30                          ;
-;     normal            ; 27                          ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 12                          ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 13                          ;
+; boundary_port         ; 16                          ;
+; cycloneiii_ff         ; 14                          ;
+;     ENA               ; 12                          ;
+;     SCLR              ; 1                           ;
+;     plain             ; 1                           ;
+; cycloneiii_lcell_comb ; 35                          ;
+;     arith             ; 11                          ;
+;         2 data inputs ; 11                          ;
+;     normal            ; 24                          ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 13                          ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 4                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.98                        ;
+; Max LUT depth         ; 3.10                        ;
+; Average LUT depth     ; 2.35                        ;
 +-----------------------+-----------------------------+
 
 
@@ -272,24 +288,32 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
-    Info: Processing started: Fri Apr 13 03:07:50 2018
+    Info: Processing started: Sat Apr 14 20:54:51 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off miniprojLSD -c miniprojLSD
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file clockadjuster.vhd
     Info (12022): Found design unit 1: clockAdjuster-Behavioral File: D:/git/miniprojLSD/src/Fase1/clockAdjuster.vhd Line: 12
     Info (12023): Found entity 1: clockAdjuster File: D:/git/miniprojLSD/src/Fase1/clockAdjuster.vhd Line: 5
-Info (12127): Elaborating entity "clockAdjuster" for the top level hierarchy
+Info (12021): Found 2 design units, including 1 entities, in source file bin7segdecoder.vhd
+    Info (12022): Found design unit 1: Bin7SegDecoder-Behavioral File: D:/git/miniprojLSD/src/Fase1/Bin7SegDecoder.vhd Line: 10
+    Info (12023): Found entity 1: Bin7SegDecoder File: D:/git/miniprojLSD/src/Fase1/Bin7SegDecoder.vhd Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file fase1.bdf
+    Info (12023): Found entity 1: Fase1
+Info (12021): Found 2 design units, including 1 entities, in source file timer.vhd
+    Info (12022): Found design unit 1: Timer-Behavioral File: D:/git/miniprojLSD/src/Fase1/Timer.vhd Line: 14
+    Info (12023): Found entity 1: Timer File: D:/git/miniprojLSD/src/Fase1/Timer.vhd Line: 5
+Info (12127): Elaborating entity "Timer" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 59 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 57 logic cells
+Info (21057): Implemented 47 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 13 output pins
+    Info (21061): Implemented 31 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 891 megabytes
-    Info: Processing ended: Fri Apr 13 03:08:02 2018
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Peak virtual memory: 890 megabytes
+    Info: Processing ended: Sat Apr 14 20:55:04 2018
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:30
 
 
