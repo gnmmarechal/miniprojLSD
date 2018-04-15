@@ -1,0 +1,136 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/git/miniprojLSD/src/Fase1/simulation/qsim
+vclockAdjuster
+Z1 !s110 1523585186
+!i10b 1
+!s100 @C>8f][46^zV24<5W2eUQ3
+I>iXNn0k7_P1g>mSaflBZz0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1523585185
+Z3 8miniprojLSD.vo
+Z4 FminiprojLSD.vo
+Z5 L0 32
+Z6 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z7 !s108 1523585186.000000
+Z8 !s107 miniprojLSD.vo|
+Z9 !s90 -work|work|miniprojLSD.vo|
+!i113 1
+Z10 o-work work
+nclock@adjuster
+vclockAdjuster_vlg_vec_tst
+R1
+!i10b 1
+!s100 Ya]jmf<z8U`eenabL:D]a2
+I[M?4j:IRmRDWMDzf9l_c01
+R2
+R0
+w1523585181
+Z11 8Waveform.vwf.vt
+Z12 FWaveform.vwf.vt
+Z13 L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+Z14 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+nclock@adjuster_vlg_vec_tst
+vFase1
+Z15 !s110 1523743189
+!i10b 1
+!s100 TChSI?alGhY^UV^[K9;_30
+InL9z:CTWflF<jFNH=Gj2`0
+R2
+R0
+w1523743188
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z16 !s108 1523743189.000000
+R8
+R9
+!i113 1
+R10
+n@fase1
+vFase1_vlg_vec_tst
+R15
+!i10b 1
+!s100 DgLYH96FW3;n4?ZgfnEoZ3
+I^h3]10NihhhL1ZTT;FKD90
+R2
+R0
+w1523743183
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+R13
+R6
+r1
+!s85 0
+31
+R16
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R10
+n@fase1_vlg_vec_tst
+vTimeFormatConverter
+Z17 !s110 1523770205
+!i10b 1
+!s100 TJ671?N6MNO6`8Rh_0V900
+I6RT;[g?`Y^e]m@O>HPfz>2
+R2
+Z18 dD:/git/miniprojLSD/src/Fase2/simulation/qsim
+w1523770204
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z19 !s108 1523770205.000000
+R8
+R9
+!i113 1
+R10
+n@time@format@converter
+vTimeFormatConverter_vlg_vec_tst
+R17
+!i10b 1
+!s100 B3Xfl4=^KQj3Qln6>Me652
+IFRHMWimDCo7f5nXgRMV_[3
+R2
+R18
+w1523770200
+R11
+R12
+R13
+R6
+r1
+!s85 0
+31
+R19
+!s107 Waveform.vwf.vt|
+R14
+!i113 1
+R10
+n@time@format@converter_vlg_vec_tst

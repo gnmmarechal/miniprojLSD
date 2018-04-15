@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Apr 15 06:44:42 2018
+Quartus Prime Version : 15.1.1 Build 189 12/02/2015 SJ Lite Edition
+Revision Name : miniprojLSD
+Top-level Entity Name : Fase2
+Family : Cyclone IV E
+Total logic elements : 754
+    Total combinational functions : 754
+    Dedicated logic registers : 46
+Total registers : 46
+Total pins : 33
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

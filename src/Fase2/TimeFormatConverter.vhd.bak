@@ -1,0 +1,11 @@
+library IEEE;
+use IEEE.NUMERIC_STD.all;
+use IEEE.STD_LOGIC_1164.all;
+
+entity TimeFormatConverter is
+	port( input		:	in	std_logic_vector(11 downto 0);
+			minOut1	:	out std_logic_vector(3 downto 0);
+			minOut0	:	out std_logic_vector(3 downto 0);
+			secOut1	:	out std_logic_vector(3 downto 0);
+			secOut0	:	out std_logic_vector(3 downto 0));
+end TimeFormatConverter;
